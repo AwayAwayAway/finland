@@ -1,0 +1,352 @@
+.main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &__first-header,  
+    &__second-header,  
+    &__third-header,  
+    &__fourth-header,  
+    &__fivth-header,  
+    &__sixth-header {
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding-bottom: 1rem;
+        border-bottom: 1.5px solid white;
+        width: 10rem;
+    }
+
+    &__first-content,
+    &__second-content,  
+    &__third-content,  
+    &__fourth-content,  
+    &__fivth-content,  
+    &__sixth-content {
+        padding-top: 1rem;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+
+    .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+    &__one, 
+    &__four,
+    &__five {
+        position: relative;
+        flex-direction: column;
+        height: 40vh;
+        width: 40%;
+        z-index: 4;
+        color: white;
+        padding-left: 2rem;
+
+        a {
+            @extend .cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/finland_helsinki.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #33334e, #282a69);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    &__two, 
+    &__three, 
+    &__six {
+        position: relative;
+        flex-direction: column;
+        color: white;
+        height: 40vh;
+        width: 60%;
+        z-index: 4;
+        padding-left: 2rem;
+
+        a {
+            @extend .cover
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/finland_lake.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #412fe4, #220dda);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    &__three {
+        a {
+            @extend .cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/finland_tampere.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #b7c279, #b5d330);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    &__four {
+        a {
+            @extend .cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/natural_beauty.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #494249, #47253f);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    &__five {
+        a {
+            @extend .cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/Horses.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #854d4d, #692841);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    &__six {
+        a {
+            @extend .cover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/images/nature.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 1;
+            z-index: 0;
+            height: 40vh;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #b15a4b, #ac663d);
+            opacity: 0.8;
+            z-index: 1;
+            height: 40vh;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .main {
+        
+        &__one,
+        &__two,
+        &__three,
+        &__four,
+        &__five,
+        &__six {
+            width: 50vw; 
+
+            &::after {
+                background: none;
+            }  
+        } 
+    }
+}
+
+@include breakpoint(mobile) {
+    .main {
+        flex-direction: column;
+        
+        &__one,
+        &__two,
+        &__three,
+        &__four,
+        &__five,
+        &__six {
+            width: 100vw;
+
+            &::after {
+                background: none;
+            } 
+        }       
+    }
+}
+
+.background_hide::after {
+    opacity: 0;
+}
+
+.backHide {
+    opacity: 0.3;
+}
+
+.info {
+    background-color: #2a2f4a;
+    flex-direction: column;
+    
+    &__inner {
+        width: 70vw;
+        margin: 4rem auto;
+    }
+
+    &__header {
+        @extend .main__first-header;  
+    }
+
+    &__content {
+        @extend .main__first-content;
+        font-size: 0.8rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+
+        p {
+            line-height: 1.8;
+        }
+    }
+    
+    a {
+        color: white;
+        border: 1px solid white;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,253 @@
+@import "mixins";
+
+.header {
+    width: 100%;
+    position: absolute;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: white;
+    padding: 1.5rem;
+    opacity: 1;
+    
+    &__logo {
+        word-spacing: 0.3rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: white; 
+
+        a {
+            color: inherit;  
+        }
+
+        span {
+            color: black;
+            padding: 0.2rem;
+            background-color: white;
+        }
+    }
+
+    &__menu {
+        word-spacing: 0.3rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+
+        a {
+          color: white;  
+        }
+
+        span {
+            color: black;
+            padding: 0.2rem;
+            background-color: white;
+        }
+    }
+}
+
+//background
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(40, 40, 63, 0.9);
+    z-index: 100;
+    visibility: hidden;
+    transition: opacity .5s ease-in-out;
+}
+
+//menu
+.dropdown {
+    background-color: transparent;
+    position: fixed;
+    z-index: 1000;
+    top: 30%;
+    left: 45%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 15rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    
+    a {
+        color: white; 
+        transition: color .3s ease-in-out;
+       
+        &:hover {
+            color: cyan;
+        }
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    &__menu {
+        
+        li {
+            padding: 1rem;
+        }   
+
+        li:not(:last-child) {
+            border-bottom: 1px solid grey;
+        } 
+    }
+
+    &__menu-btns {
+
+        .signup {
+            cursor: pointer;
+            background-color: white;
+            padding: 0.5rem 0 0.5rem 0;
+            transition: background-color .3s ease-in-out;
+
+            &:hover {
+                background-color: cyan;
+            }
+
+            a {
+                color: rgba(40, 40, 63, 1);
+            } 
+        }
+
+        .login {
+            cursor: pointer;
+            margin-top: 1rem;
+            border: 1.5px solid white;
+            padding: 0.5rem 0 0.5rem 0;
+            transition: border-color .3s ease-in-out;
+
+            &:hover {
+                border-color: cyan;
+            }
+        }
+    }
+    
+    //close menu btn
+    #close_menu {
+        position: fixed;
+        top: 3%;
+        right: 3%;
+        color: white;
+        cursor: pointer;
+        transition: color .3s ease-in-out;
+        
+        &:hover {
+            color: cyan;
+        }
+    } 
+}
+
+@include breakpoint(mobile) {
+    .dropdown {
+        left: 20%;
+    }
+}
+
+.hero {
+    flex-direction: column;
+    height: 75vh;
+    color: black;
+    opacity: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(/images/background_main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        z-index: 0;
+        height: 75vh;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #33334e, #282a69);
+        opacity: 0.8;
+        z-index: 1;
+        height: 75vh;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 3;
+        width: 70%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+        border-bottom: 2px solid white;
+        padding-bottom: 2rem;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 4;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: white;
+        padding-top: 2rem;
+
+        a {
+            color: inherit;
+            margin-left: 2rem;
+            border: 1px solid white;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+    }
+}
+
+@include breakpoint(mobile) {
+    .hero {
+        height: 60vh;
+
+        &::after {
+            height: 60vh; 
+        }
+
+        &__header { 
+            font-size: 1.2rem;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            p {
+              padding-bottom: 2rem;  
+            }
+            
+            a {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.menu_show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.backHide {
+    opacity: 0.3;
+}

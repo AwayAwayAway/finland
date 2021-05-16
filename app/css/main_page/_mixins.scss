@@ -1,0 +1,12 @@
+// 640 px 1024px 1440px
+$breakpoint-down: (
+    mobile: 40em,
+    tablet: 64em,
+    destop: 90em,
+);
+
+@mixin breakpoint($size) {
+    @media (max-width: map-get($map: $breakpoint-down, $key: $size)) {
+        @content
+    }
+}

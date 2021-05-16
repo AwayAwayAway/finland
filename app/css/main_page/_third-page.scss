@@ -1,0 +1,35 @@
+.third-page-info {
+    background-color: #2a2f4a;
+    flex-direction: column;
+    
+    &__inner {
+        width: 70vw;
+        margin: 4rem auto;
+    }
+
+    &__header {
+        @extend .main__first-header;
+        
+    }
+
+    &__content {
+        @extend .main__first-content;
+        font-size: 0.8rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+
+        p {
+            line-height: 1.8;
+        }
+    }
+
+    &__image {
+        background-image: url(/images/third_page_main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 2rem auto;
+        height: 30vh;
+
+    }
+}

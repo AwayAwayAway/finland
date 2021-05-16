@@ -1,0 +1,65 @@
+.second-hero {
+    flex-direction: column;
+    height: 75vh;
+    color: black;
+    opacity: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(/images/second_page_main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        z-index: 0;
+        height: 75vh;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #a06e5a, #7c682f);
+        opacity: 0.8;
+        z-index: 1;
+        height: 75vh;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 3;
+        width: 70%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+        border-bottom: 2px solid white;
+        padding-bottom: 2rem;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 4;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: white;
+        padding-top: 2rem;
+
+        a {
+            color: inherit;
+            margin-left: 2rem;
+            border: 1px solid white;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+    }
+}
