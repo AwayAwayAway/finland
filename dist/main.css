@@ -234,7 +234,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/background_main.jpg);
+  background-image: url('./images/background_main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +388,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/finland_helsinki.jpg);
+  background-image: url('./images/finland_helsinki.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -433,7 +433,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/finland_lake.jpg);
+  background-image: url('./images/finland_lake.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -465,7 +465,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/finland_tampere.jpg);
+  background-image: url('./images/finland_tampere.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -497,7 +497,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/natural_beauty.jpg);
+  background-image: url('./images/natural_beauty.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -529,7 +529,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/Horses.jpg);
+  background-image: url('./images/Horses.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -561,7 +561,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/nature.jpg);
+  background-image: url('./images/nature.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -848,7 +848,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/second_page_main.jpg);
+  background-image: url('./images/second_page_main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1026,7 +1026,7 @@ body {
   height: 50vh;
   width: 100vw;
   position: relative;
-  background-image: url(/images/second_page.jpg);
+  background-image: url('./images/second_page.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1042,7 +1042,7 @@ body {
   height: 52vh;
   width: 100%;
   position: relative;
-  background-image: url(/images/second_page_2.jpg);
+  background-image: url('./images/second_page_2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1062,7 +1062,7 @@ body {
   height: 52vh;
   width: 100%;
   position: relative;
-  background-image: url(/images/second_page_3.jpg);
+  background-image: url('./images/second_page_3.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1112,7 +1112,7 @@ body {
 }
 
 .third-page-info__image {
-  background-image: url(/images/third_page_main.jpg);
+  background-image: url('./images/third_page_main.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
